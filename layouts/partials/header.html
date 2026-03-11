@@ -31,7 +31,7 @@
           {{ range .Site.Menus.main }}
           {{ $name := .Name }}
           <li class="pull-left {{ if eq $name $title }}current{{ else if eq $section $name }}current{{ else if eq $title (pluralize $name) }}current{{ end }}">
-            <a href="{{ .URL }}">~/{{ .Name }}</a>
+            <a href="{{ .URL }}">{{ .Name }}</a>
           </li>
           {{end}}
 
