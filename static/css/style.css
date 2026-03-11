@@ -188,7 +188,7 @@ pre code {
 }
 
 code {
-    background-color: light-dark(#d6d6d6, #888);
+    background-color: light-dark(#000, #000);
     border-radius: 3px;
     padding: 0.2em;
     overflow-x: auto;
