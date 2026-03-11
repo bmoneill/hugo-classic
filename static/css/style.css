@@ -1,81 +1,92 @@
 /* Dark mode */
 @media (prefers-color-scheme: dark) {
     body {
-        background-color: #393E41;
+        background-color: #393e41;
         color: white;
     }
 
     blockquote {
-      background: #393E41;
+        background: #393e41;
     }
 
     a {
-      color: #EBC3DB;
+        color: #ebc3db;
     }
 
     header {
-      background: #393E41;
-      border-bottom: 2px dotted #EBC3DB;
-
+        background: #393e41;
+        border-bottom: 2px dotted #fff;
     }
 
-    .article-meta, .menu a {
-      background: #393E41;
-      color: white;
+    .article-meta,
+    .menu a {
+        background: #393e41;
+        color: white;
     }
 
     table {
-      margin: auto;
-      border-top: 1px solid #666;
-      border-bottom: 1px solid #666;
+        margin: auto;
+        border-top: 1px solid #666;
+        border-bottom: 1px solid #666;
     }
-    table thead th { border-bottom: 1px solid #666; }
-    th, td { padding: 5px; }
-    tr:nth-child(even) { background: #666 }
-
+    table thead th {
+        border-bottom: 1px solid #666;
+    }
+    th,
+    td {
+        padding: 5px;
+    }
+    tr:nth-child(even) {
+        background: #666;
+    }
 }
-
 
 /* Light mode */
 @media (prefers-color-scheme: light) {
     blockquote {
-      background: #f9f9f9;
+        background: #f9f9f9;
     }
 
     a {
-      color: #613DC1;
+        color: #613dc1;
     }
 
     header {
-      background: #613DC1;
+        background: #613dc1;
     }
 
-    .article-meta, .menu a {
-      background: #E8DBC5;
-      color: #000;
+    .article-meta,
+    .menu a {
+        background: #e8dbc5;
+        color: #000;
     }
 
     table {
-      margin: auto;
-      border-top: 1px solid #666;
-      border-bottom: 1px solid #666;
+        margin: auto;
+        border-top: 1px solid #666;
+        border-bottom: 1px solid #666;
     }
-    table thead th { border-bottom: 1px solid #ddd; }
-    th, td { padding: 5px; }
-    tr:nth-child(even) { background: #eee }
-
+    table thead th {
+        border-bottom: 1px solid #ddd;
+    }
+    th,
+    td {
+        padding: 5px;
+    }
+    tr:nth-child(even) {
+        background: #eee;
+    }
 }
 
-
 body {
-  max-width: 800px;
-  margin: auto;
-  padding: .2em;
-  line-height: 1.5em;
+    max-width: 60rem;
+    margin: auto;
+    padding: 0.2em;
+    line-height: 1.5em;
 }
 
 h1 {
-  line-height: 1.5em;
+    line-height: 1.5em;
 }
 
 /* Table of Contents, if wanted
@@ -88,40 +99,54 @@ output:
 
     */
 
-#TableOfContents, #TOC {
-  border: 1px solid #eee;
-  border-radius: 5px;
+#TableOfContents,
+#TOC {
+    border: 1px solid #eee;
+    border-radius: 5px;
 }
 
 /* Header and Footer */
-.menu li { display: inline-block; }
-.article-meta, .menu a {
-  text-decoration: none;
-  padding: 5px;
-  border-radius: 5px;
-  border-style: dotted;
-  border-width: 1px;
-  margin: 20px 0px 20px 0px;
+.menu li {
+    display: inline-block;
+}
+.article-meta,
+.menu a {
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 5px;
+    border-style: dotted;
+    border-width: 1px;
+    margin: 20px 0px 20px 0px;
 }
 
-.terms { font-size: .9em; }
-.menu, .article-meta, footer { text-align: center; }
-.title { font-size: 1.1em; }
-footer a { text-decoration: none; }
+.terms {
+    font-size: 0.9em;
+}
+.menu,
+.article-meta,
+footer {
+    text-align: center;
+}
+.title {
+    font-size: 1.1em;
+}
+footer a {
+    text-decoration: none;
+}
 
 .pull-left {
-    float: left
+    float: left;
 }
 .pull-right {
-    float: right
+    float: right;
 }
 
 a {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 a:hover {
-  text-decoration: underline;
+    text-decoration: underline;
 }
 
 /* Adjust background at your leisure! */
@@ -136,89 +161,90 @@ header ul,
 header ol {
     margin: 0;
     padding: 0;
-    list-style: none
+    list-style: none;
 }
 header nav {
-    padding: 0 0.5rem
+    padding: 0 0.5rem;
 }
 
 header a {
     color: #fff;
     line-height: 1.75rem;
-    padding: 0 0.5rem
+    padding: 0 0.5rem;
 }
 header a:hover,
 header .current a {
-    color: #fff
+    color: #fff;
 }
 
 /* Code Boxes */
 pre {
-  border: 2px solid #EBC3DB;
-  padding: 1em;
-  overflow-x: auto;
+    border: 2px solid #fff;
+    padding: 1em;
+    overflow-x: auto;
 }
-pre code { background: none; }
+pre code {
+    background: none;
+}
 
 code {
-  background-color: light-dark(#D6D6D6, #888);
-  border-radius: 3px;
-  padding: 0.2em;
-  overflow-x: auto;
+    background-color: light-dark(#d6d6d6, #888);
+    border-radius: 3px;
+    padding: 0.2em;
+    overflow-x: auto;
 }
 
 /* Images, tables, misc. */
-img, iframe, video {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+img,
+iframe,
+video {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 main {
-  hyphens: auto;
-  max-width: 650px;
-  margin-left: auto;
-  margin-right: auto;
-  line-height: 1.7em;
-  hyphens: auto;
-  display: block;
-  font-size: 1.1em;
+    hyphens: auto;
+    max-width: 60rem;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.7em;
+    hyphens: auto;
+    display: block;
+    font-size: 1.1em;
 }
 main a {
-  font-weight: bold;
+    font-weight: bold;
 }
 
 blockquote {
-
-  border-left: 5px solid #ccc;
-  padding: 3px 1em 3px;
+    border-left: 5px solid #ccc;
+    padding: 3px 1em 3px;
 }
 
 .content-wrapper {
-  padding: 0px 12px 0px 12px;
+    padding: 0px 12px 0px 12px;
 }
 #foxy {
-  min-width: 40px;
-  float: right;
-  padding: 10px;
-  display: block;
+    min-width: 40px;
+    float: right;
+    padding: 10px;
+    display: block;
 }
-
 
 #table-of-contents {
 }
 
 /* Small devices, phones */
-@media only screen and (min-width : 480px) {
-  #foxy {
-    min-width: 40px;
-    float: center;
-    padding: 10px 10px 10px 20px;
-    display: block;
-  }
-
+@media only screen and (min-width: 480px) {
+    #foxy {
+        min-width: 40px;
+        float: center;
+        padding: 10px 10px 10px 20px;
+        display: block;
+    }
 }
 
 /* 在大屏幕上应用特定样式 */
@@ -236,4 +262,3 @@ blockquote {
         overflow-y: auto; /* 添加垂直滚动条 */
     }
 }
-
