@@ -89,6 +89,10 @@ h1 {
     line-height: 1.5em;
 }
 
+td {
+	text-align: center;
+}
+
 /* Table of Contents, if wanted
 
 Add to yaml:
